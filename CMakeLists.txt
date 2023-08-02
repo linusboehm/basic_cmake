@@ -43,7 +43,7 @@ set(CMAKE_CXX_FLAGS_RELEASE
     "-O3"
     CACHE INTERNAL "")
 set(CMAKE_CXX_FLAGS_DEBUG
-    "-O1 -fsanitize=address -fno-omit-frame-pointer "
+    "-O1 -fsanitize=address -fsanitize=leak -fsanitize=undefined -fno-omit-frame-pointer "
     CACHE INTERNAL "")
 
 message("BUILD TYPE: ${CMAKE_BUILD_TYPE}")
