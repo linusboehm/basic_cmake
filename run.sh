@@ -1,6 +1,7 @@
-mkdir -p build
-cd build
+BUILD_DIR=build
+mkdir -p $BUILD_DIR
+cd $BUILD_DIR
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 cd ..
-./build/bin/main $@
+./$BUILD_DIR/bin/main $@
